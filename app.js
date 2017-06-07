@@ -12,4 +12,6 @@ function getText() {
 
 
 
-getText();
+$(function() {
+  getText();
+});
