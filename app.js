@@ -24,5 +24,16 @@ uniqueWords(newText);
 }
 
 function uniqueWords(newText) {
-  console.log(newText);
+ var array = newText.split(" ");
+ var uniqueCounter = {};
+
+for (var i = 0; i < array.length; i++) {
+  if (uniqueCounter[array[i]] === undefined) {
+    uniqueCounter[array[i]] = 1;
+  }
+  else {
+    uniqueCounter[array[i]] += 1;
+  }
+}
+ var uniqueWord = Object.values(uniqueCounter).length;
 }
