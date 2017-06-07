@@ -20,4 +20,9 @@ function wordCount(newText) {
 var totalCount = newText.split(' ').length;
 $(".js-text-report").removeClass("hidden");
 $(".js-word-count").append(" " +totalCount);
+uniqueWords(newText);
+}
+
+function uniqueWords(newText) {
+  console.log(newText);
 }
