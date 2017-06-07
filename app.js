@@ -36,4 +36,5 @@ for (var i = 0; i < array.length; i++) {
   }
 }
  var uniqueWord = Object.values(uniqueCounter).length;
+ $(".js-unique-word").append(" " + uniqueWord);
 }
