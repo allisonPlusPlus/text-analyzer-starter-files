@@ -13,5 +13,9 @@ $(function() {
 
 function handleText(text) {
   var newText = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s+/g, " ").trim();
-  console.log(newText);
+  wordCount(newText);
+}
+
+function wordCount(newText) {
+console.log(newText.split(' ').length);
 }
