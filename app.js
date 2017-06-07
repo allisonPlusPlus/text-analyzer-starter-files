@@ -17,5 +17,7 @@ function handleText(text) {
 }
 
 function wordCount(newText) {
-console.log(newText.split(' ').length);
+var totalCount = newText.split(' ').length;
+$(".js-text-report").removeClass("hidden").text(totalCount);
+
 }
