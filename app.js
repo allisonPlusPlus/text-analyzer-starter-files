@@ -18,6 +18,6 @@ function handleText(text) {
 
 function wordCount(newText) {
 var totalCount = newText.split(' ').length;
-$(".js-text-report").removeClass("hidden").text(totalCount);
-
+$(".js-text-report").removeClass("hidden");
+$(".js-word-count").append(" " +totalCount);
 }
