@@ -12,6 +12,6 @@ $(function() {
 });
 
 function handleText(text) {
-  var newText = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").trim();
+  var newText = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s+/g, " ").trim();
   console.log(newText);
 }
