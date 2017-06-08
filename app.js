@@ -3,7 +3,6 @@ function getText() {
         event.preventDefault();
         var text = $(this).find('#user-text').val();
         handleText(text);
-
     });
 
 }
@@ -36,7 +35,6 @@ function uniqueWords(newText) {
     }
     var uniqueWord = Object.values(uniqueCounter).length;
     $(".js-unique-word").append(" " + uniqueWord);
-
     averageWordLength(newText);
 }
 
@@ -48,7 +46,6 @@ function averageWordLength(newText) {
     }
     var average = lengthArray.reduce(function(a, b) {
         return a + b / lengthArray.length;
-
     });
     $(".js-word-length").append(" " + average);
 }
