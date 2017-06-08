@@ -43,5 +43,12 @@ for (var i = 0; i < array.length; i++) {
 
 function averageWordLength(newText) {
   var array = newText.split(" ");
-  console.log(array);
+  var lengthArray = [];
+for (var i = 0; i < array.length; i++) {
+     lengthArray.push(array[i].length);
+}
+var average = lengthArray.reduce(function(a,b){
+  return a + b/lengthArray.length;
+});
+console.log(average);
 }
